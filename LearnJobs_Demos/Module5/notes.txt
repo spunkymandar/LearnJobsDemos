@@ -1,0 +1,12 @@
+NIO : Non Blocking IO .. New IO
+	Path
+	Paths
+	Files
+	Channel
+	Buffer
+	
+SQL
+	DDL : Data Definition  -> create, drop etc
+	DQL : Data Query       -> select
+	DML : Data Manipulation-> insert, update, delete 
+	DCL : Data Control     -> grant, revoke 
