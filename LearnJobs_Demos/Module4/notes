@@ -1,0 +1,38 @@
+What is Thread?
+ smallest unit of program that you want to execute. It is a sub part of  a process.
+ 
+How to create thread?
+  a. By extending Thread class
+  b. By implementing Runnable interface : used because java does not permit to extend more than one class
+     i. create object of runnable class
+     ii. wrap this object in the Thread object
+     
+     Runnable is implemented Thread
+     run() is declared in Runnable
+why thread?
+
+life cycle of thread
+	1. Instantiation of Thread :	instantiated mode
+	2. Push the thread to ready pool/ thread pool by invoking start() method : runnable mode	
+	3. run() method executes : running mode
+	4. pausing a thread      : suspended thread 
+	5. thread is completed   : dead mode
+Synchronizing of thread
+
+Executor Framework Java:
+ExecutorService: 
+Interface, which is used to execute something taking the help of internal threads
+It creates a thread and does the jobs.
+ a. SingleThreadSchedular
+ b. FixedThreadSchedular
+ c. CachedThreadPool
+ d. ScheduledExecutor
+
+To create these, invoke the static methods of Executors. 
+
+
+ExecutorService Methods: 
+1. execute(Runnable) : void
+2. submit(Runnable)  : Future
+3. submit(Callable)  : Future
+
