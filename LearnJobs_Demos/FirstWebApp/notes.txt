@@ -1,0 +1,79 @@
+Desktop Application
+	set up file
+
+Web Application: 
+  Why?  Netwokring program : TCP/IP Programming 
+        HTTP : HyperText Transfer Protocol. Transfer the HTML data from server to client
+               Built on the top of TCP IP/ *internally it uses TCP/IP
+               Transfer of data is done through lightweight softwares called as Browsers. 
+               
+               http:   //localhost  : 8080  /   FirstWebApp    /first.html  --
+               
+               1		2			  3			4				5
+               
+               1. Signifies that data is coming from HTTP protocol 
+               2. Signifies the IP address of server
+               3. Signifies the port number where server is installed. 
+               4. Name of web application on server
+               5. Name of resources of web application
+
+
+Request : Clients asks for some services
+Response: server responds with some services where data is present in HTML format 
+
+Servlets: 
+   Java programs which runs on web server to generate dynamic responses. 
+   servlet-api.jar --> present in apache tomcat's lib directory 
+   						add this jar file in your project 
+   						
+   						
+Servlet Hierarchy 
+	Servlet Interface
+	GenericServlet 
+	HttpServlet
+
+HTTP methods
+	doGet(HttpServletRequest req, HttpServletResponse response) : Used to get some data from server. Default method invoked when you load the servlet. It can also used to send the data 
+				to server.(But not recommended)
+	
+	doPost(HttpServletRequest req, HttpServletResponse response): Used to post some data to server and retrieve the result from server
+	
+
+Objects in HttpServlet:
+	HttpServletRequest : contains the information about request which is passed by client
+	HttpServletResponse: containing the data which you want to pass to client. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
