@@ -1,0 +1,20 @@
+SessionHandling
+	HTTP is stateless. If doesnt maintain the information of client. 
+	Ways to achieve session handling
+	a. Hidden form fields
+	b. URL Rewriting
+	c. Cookies
+	d. HttpSession
+
+using the HttpSession: 
+1. Create object of HttpSesssion from where you want to maintain the session
+2. Add the parameters to HttpSession objects 
+3. Retrive the HttpSession where you want to retrive the information from HttpSession
+4. get the data
+	
+	
+	
+	
+
+ServletJDBC
+JSP
