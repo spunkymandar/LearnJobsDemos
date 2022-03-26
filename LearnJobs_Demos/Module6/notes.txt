@@ -1,0 +1,32 @@
+Requirement from Application Design (Design Patterns)
+  Flexible
+  Maintainable
+  Testable
+  Non-redundant : (No deplication of code)
+  
+Components of Application : multi-Layered Application
+  Business Logic 
+  Presentation 
+  Resources (Connections, setttings, txt, images)
+
+Architectures of Application Design: 
+ M :Model => Business Logic
+ V :View  => Presentation 
+ C :Controller
+ 
+ Request -- Response
+ 
+ MVC1
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ MVC2
+ 
+ 
+ 
+   
