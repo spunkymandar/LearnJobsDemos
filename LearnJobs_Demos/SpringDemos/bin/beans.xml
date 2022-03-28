@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+    
+    <!-- Dependency Injection : setter injection -->
+    <bean id="emp1" class="com.util.emp.Employee">
+    	<!-- property attribute connects to setter methods of object -->
+    	<property name="empId" value="105"/>
+    	<property name="empName" value="Williams"/>
+    </bean>
+    
+    <!-- Dependency Injection : constructor injection -->
+    <!-- 
+    	constructor argument takes 2 attributes
+    	type -> defines the type of data
+    	index -> defines the index number of an argument 
+     -->
+    <bean id="emp2" class="com.util.emp.Employee">
+    	<constructor-arg value="118"/>
+    	<constructor-arg value="Yash Dave"/>
+    </bean>
+    
+    
+    
+    <bean id="emp3" class="com.util.emp.Employee">
+    	<property name="empId" value="116"/>
+    	<property name="empName" value="Rajesh"/>
+    	<property name="empAddress" ref="address1"/>
+    </bean>
+    
+    <bean id="address1" class="com.util.emp.Address">
+    	<property name="cityName" value="Mumbai"/>
+    	<property name="stateName" value="Maharashtra"/>
+    </bean>
+    
+    
+    <bean id="address2" class="com.util.emp.Address">
+    	<constructor-arg value="Pune" index="0"/>
+    	<constructor-arg value="Maharashtra" index="1"/>
+    </bean>
+    
+    
+    
+    <bean id="emp4" class="com.util.emp.Employee">
+    	<constructor-arg value="117"/>
+    	<constructor-arg value="Sam"/>
+    	<constructor-arg ref="address2"/>
+    </bean>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</beans>
