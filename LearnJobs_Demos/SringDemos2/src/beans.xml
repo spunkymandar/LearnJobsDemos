@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+    
+    <!-- 
+    <bean id="car1" class="com.beans.Car" scope="prototype">
+    	<property name="carId" value="101"/>
+    	<property name="carMake" value="Tata"/>
+    	<property name="carPrice" value="560000"/>
+    
+    </bean>
+   
+    <bean id="engg_old" class="com.beans.EnggStudent">
+    	<property name="rollNo" value="101"/>
+    	<property name="name" value="Yash"/>
+    	<property name="branch_code" value="CSE"/>
+    	<property name="college_code" value="YT102"/>
+    </bean>
+     
+     <bean id="student1" class="com.beans.Student">
+     	<property name="rollNo" value="101"/>
+    	<property name="name" value="Yash"/>
+     </bean>
+     
+    <bean id="student2" class="com.beans.Student">
+     	<property name="rollNo" value="101"/>
+    	<property name="name" value="Yash"/>
+     </bean>
+    
+    
+    
+    <bean id="engg_new" class="com.beans.EnggStudent" parent="student1">
+     	<property name="branch_code" value="CSE"/>
+    	<property name="college_code" value="YT102"/>
+     </bean>
+     
+     -->  
+     
+     <!-- configuration for factory method -->
+     
+    <!--  
+    <bean id="car_factory" class="com.factory.CarFactory"/>
+    
+   	<bean id="car_obj" factory-bean="car_factory" factory-method="buildCar">
+   	
+   	</bean>  
+   -->
+     
+     <bean id="car1" class="com.beans.Car" p:carId="102" p:carMake="Toyota" p:carPrice="780000">
+     </bean>
+     
+</beans>
