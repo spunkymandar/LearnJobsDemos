@@ -1,0 +1,11 @@
+Spring DAO
+  JdbcTemplate
+  class JdbcTemplate{
+  DriverManagerDataSource dataSource;
+  set...get
+  
+  }
+  
+  class DriverManagerDataSource{
+  String driverClassname, url,password,username;
+  }
