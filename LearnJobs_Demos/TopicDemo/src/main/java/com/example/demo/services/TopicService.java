@@ -31,7 +31,10 @@ public class TopicService {
 	
 	//searches and returns the Topic from topicList according to id passed in argument
 	public Topic getTopic(String id) {
-		//write some business logic to search topic from topicList and return that
+		for(Topic topic: topicList) {
+			if(topic.getId().equals(id))
+				return topic;
+		}
 		return null;
 	}
 	
